@@ -1,5 +1,5 @@
 module.exports = {
-  appName: 'Our Glorious Node Project',
+  appName: 'heathers FSJS project',
   port: 3030,
   db: {
     host: 'localhost',

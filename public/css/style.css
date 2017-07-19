@@ -30,6 +30,24 @@ body {
 	margin: 1%;
 }
 
+.container {
+	padding: 1%;
+}
+
+button {
+	background-color: #31C3EF;
+	color: white;
+	font-size: 20px;
+	display: inline-block;
+	border-radius: 4px;
+	margin: 3px;
+}
+
+
+.list-group-item {
+ 	display: block;
+ 	font-size: 25px;
+ }
 
 .footer {
 	background-color: #000000;
@@ -147,6 +165,20 @@ margin-top: 2em;
 	.me {
 	width: 15%;
  }
+
+ .list-group-item {
+ 	display: block;
+ 	font-size: 20px;
+
+ }
+
+ .form-group {
+ 	margin-top: 2%;
+ }
+
+ button {
+	font-size: 15px;
+}
 	
 	
 	 /* ==========================================================================

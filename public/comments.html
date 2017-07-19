@@ -8,8 +8,7 @@
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
- --></head>
+</head>
 
 <body>
 
@@ -28,7 +27,6 @@
  <div class="container">
       <h2>Hit me with your best, comment that is:</h2>
       <div id="list-container"></div>
-      <button id="add-file-button" class="btn btn-primary" onclick="toggleAddFileForm()">Add Comment</button>
       <div id="form-container" class="panel hidden">
         <form id="add-file-form">
           <input type="hidden" id="file-id" value="" />
@@ -41,8 +39,8 @@
             <label for="file-description">Comment</label>
             <input type="text" class="form-control" id="file-description" placeholder="Hi">
           </div>
-          <button type="button" onclick="submitFileForm()" class="btn btn-success">Submit</button>
-          <button type="button" onclick="cancelFileForm()" class="btn btn-link">cancel</button>
+          <button type="button" onclick="submitFileForm()" class="submit">Submit</button>
+          <button type="button" onclick="cancelFileForm()">cancel</button>
         </form>
       </div>
     </div>

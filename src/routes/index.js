@@ -3,11 +3,8 @@ const router = require('express').Router();
 const mongoose = require('mongoose');
 
 const FILES = [
-  {id: 'a', title: 'cutecat1.jpg', description: 'A cute cat'},
-  {id: 'b', title: 'uglycat1.jpg', description: 'Just kidding, all cats are cute'},
-  {id: 'c', title: 'total_recall_poster.jpg', description: 'Quaid, start the reactor...'},
-  {id: 'd', title: 'louisville_coffee.txt', description: 'Coffee shop ratings'},
-];
+  {id: 'a', title: 'photos', description: 'photographer'}
+  ];
 
 
 router.use('/doc', function(req, res, next) {

@@ -21,7 +21,6 @@ function refreshFileList() {
     .then(files => {
 
       window.fileList = files;
-
       const data = {files: files};
       const html = compiledTemplate(data);
       $('#list-container').html(html);
@@ -30,7 +29,6 @@ function refreshFileList() {
 
 
 function toggleAddFileForm() {
-  console.log("Baby steps...");
   setFormData({});
   toggleAddFileFormVisibility();
 }
@@ -65,12 +63,11 @@ function submitFileForm() {
     contentType : 'application/json',
   })
     .done(function(response) {
-      console.log("We have posted the data");
       refreshFileList();
       toggleAddFileForm();
     })
     .fail(function(error) {
-      console.log("Failures at posting, we are", error);
+      console.log(error);
     })
 
   console.log("Your file data", fileData);
@@ -90,7 +87,7 @@ function editFileClick(id) {
 }
 
 function deleteFileClick(id) {
-  if (confirm("Are you sure?")) {
+  if (confirm("You really want to delete your awesome comment?")) {
     $.ajax({
       type: 'DELETE',
       url: '/api/file/' + id,
@@ -98,11 +95,11 @@ function deleteFileClick(id) {
       contentType : 'application/json',
     })
       .done(function(response) {
-        console.log("File", id, "is DOOMED!!!!!!");
+        console.log("File", id, "is gone");
         refreshFileList();
       })
       .fail(function(error) {
-        console.log("I'm not dead yet!", error);
+        console.log("Not gone", error);
       })
   }
 }
