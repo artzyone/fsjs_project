@@ -49,6 +49,15 @@ button {
  	font-size: 25px;
  }
 
+ #file-description {
+	width: 30%;
+ }
+
+ .mouseType {
+	font-size: 12px;
+	padding-left: 20%;
+ }
+
 .footer {
 	background-color: #000000;
 	color: #31C3EF;
@@ -179,6 +188,11 @@ margin-top: 2em;
  button {
 	font-size: 15px;
 }
+
+.mouseType {
+	font-size: 10px;
+	padding-left: 10%;
+ }
 	
 	
 	 /* ==========================================================================
